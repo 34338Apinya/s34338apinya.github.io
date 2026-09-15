@@ -15,46 +15,60 @@
         
         /* พื้นที่เนื้อหาหลัก */
         .container { 
-            max-width: 700px; 
+            max-width: 800px; 
             margin: 40px auto; 
             background: #fff; 
             padding: 50px 40px; 
             border-radius: 12px; 
             box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
-            text-align: center;
         }
         
-        h1 { color: #1e3a8a; font-size: 2rem; border-bottom: 3px solid #2563eb; padding-bottom: 10px; margin-bottom: 35px; display: inline-block; }
+        h1 { color: #1e3a8a; font-size: 2rem; border-left: 5px solid #2563eb; padding-left: 15px; margin-bottom: 35px; }
         
-        /* ช่องใส่รูปภาพขนาดกำลังพอดี */
-        .skill-img-box {
-            margin-bottom: 30px;
-        }
-        .skill-img-box img {
-            width: 300px;
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
-            border: 3px solid #3b82f6;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-        
-        /* กล่องข้อความเรียงยาวต่อกัน */
-        .skill-content {
+        /* การ์ดกิจกรรมแต่ละรายการ */
+        .activity-card {
             background: #f8fafc;
             border: 1px solid #e2e8f0;
-            border-left: 5px solid #3b82f6;
-            padding: 25px 30px;
-            border-radius: 8px;
+            border-top: 4px solid #3b82f6;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 35px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        
+        .activity-card h2 {
+            font-size: 1.35rem;
+            color: #1e3a8a;
+            margin-bottom: 20px;
             text-align: left;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
         }
-        .skill-content p {
-            font-size: 1.1rem;
-            line-height: 2;
-            color: #334155;
-            margin-bottom: 10px;
+
+        /* กล่องรูปภาพขนาดใหญ่ */
+        .activity-img-box {
+            margin-bottom: 20px;
         }
-        .skill-content p:last-child { margin-bottom: 0; }
+        .activity-img-box img {
+            width: 100%;
+            max-width: 550px;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #cbd5e1;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .activity-card p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #475569;
+            text-align: left;
+            background: #fff;
+            padding: 15px 20px;
+            border-radius: 6px;
+            border-left: 4px solid #0284c7;
+        }
     </style>
 </head>
 <body>
@@ -65,26 +79,40 @@
     <a href="Pin1.html">คำนำ</a>
     <a href="Pin2.html">ประวัติส่วนตัว</a>
     <a href="Pin3.html">ความสนใจศึกษาต่อ</a>
-    <a href="Pin4.html">กิจกรรม</a>
-    <a href="Pin5.html" class="active">ความสามารถพิเศษ</a>
+    <a href="Pin4.html" class="active">กิจกรรม</a>
+    <a href="Pin5.html">ความสามารถพิเศษ</a>
 </nav>
 
 <div class="container">
     <h1>ความสามารถพิเศษ</h1>
     
-    <!-- รูปภาพ IMG_0554.jpeg ขนาดพอดี -->
-    <div class="skill-img-box">
-        <img src="IMG_0554.jpeg" alt="ความสามารถพิเศษ">
+    <!-- 1 -->
+    <div class="activity-card">
+
+        <div class="activity-img-box">
+            <img src="IMG_3292.jpeg" alt=>
+        </div>
+        <p>ช่วยแยกประเภทของที่นำมาบริจาค นำของที่ยังใช้ได้ไปส่งต่อและบริจาค</p>
     </div>
 
-    <!-- ข้อความเรียงยาวต่อกันลงมา -->
-    <div class="skill-content">
-    
-        <p>• แบดมินตัน </p> 
-        <p>• มีความเป็นผู้นำ </p>
-        <p>•ทำอาหาร  </p>
-    
+    <!-- 2 -->
+    <div class="activity-card">
+
+        <div class="activity-img-box">
+            <img src="IMG_3294.jpeg" alt=>
+        </div>
+        <p>ได้เข้าร่วมกิจกรรมการปลูกป่าชายเลน</p>
     </div>
+
+    <!-- 3 -->
+    <div class="activity-card">
+    
+        <div class="activity-img-box">
+            <img src="IMG_3295.jpeg" alt>
+        </div>
+        <p>ได้ร่วมบริจาคของกินและของใช้ ที่จำเป็นเพื่อส่งต่อความช่วยเหลือแก่ผู้ที่ขาดแคลน</p>
+    </div>
+
 </div>
 
 </body>
